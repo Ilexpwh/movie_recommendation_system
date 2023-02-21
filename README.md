@@ -1,1 +1,1 @@
-# recommendation systems for movies using reviews and movie genres.
+# movie recommendation systems using reviews and movie genres.
