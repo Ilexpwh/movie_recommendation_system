@@ -15,9 +15,7 @@ if __name__ == '__main__':
     user_ratings = user_ratings.apply(lambda col: col.fillna(col.mean()), axis=0)
 
     # Split data into training and testing sets
-    test_size = 0.2
-    train_size = 1 - test_size
-    train_data = user_ratings.sample(frac=train_size, random_state=0)
+    train_data = user_ratings.sample(frac=0.8, random_state=0)
     test_data = user_ratings.drop(train_data.index)
 
     # Create user-movie matrix from training data
